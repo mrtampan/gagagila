@@ -1,0 +1,15 @@
+name: gagagila
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Running Gaganode
+        run: |
+          ./gaganode
+      - name: Done! Running server 8 jam
+        run: |
+          ping google.com -t
